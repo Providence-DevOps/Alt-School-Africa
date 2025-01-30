@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+ <meta name="description" content="This is a responsive web page">
+ <title>Responsible Web Page</title>
+</head>
+<body>
+<h1>This is my first table practice</h1>
+<table border="2" solid>
+    <caption>Student Grades</caption>
+    <thead>
+        <tr>
+            <th rowspan="2">Name</th>
+            <th rowspan="2">Grade</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th id="john" scope="row">John</th>
+            <td>85</td>
+        </tr>
+        <tr>
+            <th id="emily" scope="row">Emily</th>
+            <td>92</td>
+        </tr>
+    </tbody>
+</table>
+<dialog open aria-labelledby="dialogid">
+    <form action="thankyou.php">
+      <button type="submit" aria-label="close"
+       formmethod="dialog" formnovalidate>X</button>
+      <h2 id="dialogid">Application</h2>
+      <p>All fields are required</p>
+      <p>
+         <label>Name:
+           <input type="text" name="name" required />
+        </label>
+      </p>
+      <p>
+        <label>Warranty:
+          <input type="number" min="0" max="10"
+           name="warranty" required />
+         </label>
+      </p>
+      <p>
+        <label>Power source:
+          <select name="powersoure">
+            <option>AC/DC</option>
+            <option>Battery</option>
+            <option>Solar</option>
+          </select>
+        </label>
+      </p>
+      <p>
+        <button type="submit"
+        formmethod="post">Submit</button>
+      </p>
+    </form>
+  </dialog>
+</body>
+</html>
