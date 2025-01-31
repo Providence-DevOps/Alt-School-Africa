@@ -1,1 +1,9 @@
-/* /index.html 200
+# Redirect specific exercise pages
+/exercise2/*    /exercise2/index.html    200
+/exercise3/*    /exercise3/index.html    200
+/exercise4/*    /exercise4/index.html    200
+/exercise5/*    /exercise5/index.html    200
+/exercise6/*    /exercise6/index.html    200
+
+# Default redirect for all other requests
+/*              /exercise1/index.html    200
