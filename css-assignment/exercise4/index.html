@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4| Fitness Program </title>
+    <link rel="stylesheet" href="./styles.css">
+
+</head>
+<body>
+    <main>
+        <header class="header">
+            <div class="logo">
+                <img src="./assets/Logo.png" alt="Company Logo">
+            </div>
+
+            <h1>For Individuals</h1>
+
+            <div class="title-description">
+                <p class="desktop-description">Start benefiting from the wellness experience. For companies looking on
+                    increasing productivity, and
+                    improving organization wellness.
+                </p>
+                <p class="mobile-description">Inspiring wholesome harmony for the mind, body and spirit, for everyone,
+                    everywhere.
+                </p>
+            </div>
+        </header>
+
+        <section class="signup-form">
+            <form action="#" method="post" aria-labelledby="fitness-form">
+                <div class="form-grid">
+
+                    <div class="form-field">
+                        <label for="first-name" class="form-label">First Name</label>
+                        <input class="form-input"
+                               type="text"
+                               id="first-name"
+                               name="first-name"
+                               placeholder="Tolu"
+                               required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="last-name" class="form-label">Last Name</label>
+                        <input class="form-input"
+                               type="text"
+                               id="last-name"
+                               name="last-name"
+                               placeholder="Tolu"
+                               required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-field">
+                        <label for="gender" class="form-label">Gender</label>
+                        <div class="select-wrapper">
+                            <select class="form-select"
+                                    id="gender"
+                                    name="gender"
+                                    required
+                                    aria-required="true">
+                                <option value="" disabled selected hidden>Select here</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-field">
+                        <label for="dob" class="form-label">Date of Birth</label>
+                        <input class="form-input"
+                               type="date"
+                               id="dob"
+                               name="dob"
+                               required
+                               aria-required="true">
+                    </div>
+
+                    <div class="form-field">
+                            <label for="weight" class="form-label">Weight (KG)</label>
+                            <input class="form-input"
+                                   type="number"
+                                   id="weight"
+                                   name="weight"
+                                   placeholder="Enter weight"
+                                   min="0"
+                                   step="0.1"
+                                   required
+                                   aria-required="true">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="height" class="form-label">Height (CM)</label>
+                            <input class="form-input"
+                                   type="number"
+                                   id="height"
+                                   name="height"
+                                   placeholder="Enter height here"
+                                   min="0"
+                                   step="0.1"
+                                   required
+                                   aria-required="true">
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="activity-level" class="form-label">Activity Level</label>
+                            <div class="select-wrapper">
+                                <select class="form-select"
+                                        id="activity-level"
+                                        name="activity-level"
+                                        required
+                                        aria-required="true">
+                                    <option value="" disabled selected hidden>Select here</option>
+                                    <option value="activity1">Activity One</option>
+                                    <option value="activity2">Activity Two</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-field form-field-full">
+                            <label for="password" class="form-label">Password</label>
+                            <input class="form-input"
+                                   type="password"
+                                   id="password"
+                                   name="password"
+                                   required
+                                   minlength="8"
+                                   aria-required="true">
+                        </div>
+
+                    <button class=" form-submit form-field-full" type="submit">Register</button>
+                </div>
+            </form>
+        </section>
+
+        <footer>
+            <p class="form-footer form-field-full">
+                By clicking Register, you agree to our
+                <a href="#">Terms of Use</a> and our
+                <a href="#">Privacy Policy</a>
+            </p>
+        </footer>
+    </main> 
+</body>
+</html>

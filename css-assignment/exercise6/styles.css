@@ -1,0 +1,284 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --color-text-primary: #141414;
+  --color-text-secondary: #005ae2;
+  --color-text-tetiary: #141414;
+}
+
+a,
+button {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.highlight-secondcolor {
+  color: var(--color-text-secondary);
+}
+
+body {
+  min-height: 100vh;
+  background: url("./assets/bg-aurora.svg") no-repeat center center;
+  background-size: cover;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  margin-top: 0.6rem;
+}
+
+.nav-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Gilroy-Medium;
+  font-size: 1.12rem;
+}
+
+.nav-menus {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menus ul {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  list-style: none;
+}
+
+.nav-menus a {
+  color: var(--color-text-tetiary);
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-menus a:hover {
+  background: #f0f0f0;
+}
+
+details {
+  position: relative;
+  display: inline-block;
+}
+
+summary {
+  padding: 8px 12px;
+  cursor: pointer;
+  list-style: none;
+  color: var(--color-text-tetiary);
+  border-radius: 4px;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    margin-left: 8px;
+    width: 12px;
+    height: 12px;
+    background-image: url("./assets/arrow-down.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: bottom;
+  }
+
+  &:hover {
+    background: #f0f0f0;
+  }
+
+  &:-webkit-details-marker {
+    display: none;
+  }
+}
+
+.dropdown-content {
+  position: absolute;
+  /* top: 100%; */
+  left: 0;
+  background: white;
+  min-width: 200px;
+  padding: 0.5rem 0;
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 8px 16px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  font-family: Gilroy-SemiBold;
+
+  & .login {
+    color: var(--color-text-secondary);
+  }
+}
+
+.nav-bar .nav .free-trial {
+  background: var(--color-text-secondary);
+  color: white;
+  border-radius: 100px;
+  padding: 12px 26px;
+}
+
+.nav-bar .nav .free-trial:hover {
+  background: #1d4ed8;
+}
+
+.hero-section {
+  display: grid;
+  place-items: center;
+  max-width: 1600px;
+}
+
+/* Hero section: headline, subheadline & call to action */
+.headline h1 {
+  font-family: Gilroy-Bold;
+  font-size: clamp(0.5rem, 10vw, 3.3rem);
+  text-align: center;
+  margin: 2rem 0;
+  position: relative;
+}
+
+.hero-headline {
+  margin-top: 8rem;
+}
+
+.sub-headline {
+  font-family: Gilroy-Medium;
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 1.75rem;
+  max-width: 52%;
+  margin: 0.6rem 0;
+}
+
+.stroke-img {
+  top: 55%;
+  left: 45%;
+  position: absolute;
+}
+
+.primary {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  font-family: Gilroy-SemiBold;
+  font-size: 1rem;
+  margin: 2rem 0;
+
+  & .sign-up {
+    background: var(--color-text-secondary);
+    color: white;
+    border-radius: 100px;
+    padding: 14px 42px;
+    font-family: Gilroy-SemiBold;
+  }
+
+  & a {
+    color: var(--color-text-secondary);
+  }
+}
+
+.url-flow {
+    width: 768px;
+    height: 224px;
+    margin: 2rem 0;
+    border-radius: 24px;
+    position: relative;
+    backdrop-filter: blur(212px);
+    border: 1px solid var(--color-text-secondary);
+}
+
+.vector1 {
+    width: 260px;
+    height: 260px;
+    z-index: -1;
+    top: 92.5%;
+    left: 25%;
+    position: absolute;
+    background-size: contain;
+    background: url("./assets/vector.svg") no-repeat;
+}
+
+.vector2 {
+    width: min(100%, 400px);
+    height: 260px;
+    z-index: 1;
+    top: 100%;
+    left: 31%;
+    position: absolute;
+    background-size: contain;
+    background: url("./assets/link-flow.svg") no-repeat;
+}
+
+.url-flow-text {
+    position: absolute;
+    top: 115%;
+    font-family: Gilroy-Medium;
+    font-size: 1rem;
+    max-width: 25rem;
+    text-align: center;
+
+    & .thick__text {
+        font-family: Gilroy-SemiBold;
+    }
+}
