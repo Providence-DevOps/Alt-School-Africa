@@ -3,41 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a responsive web page">
     <title>About Me</title>
 </head>
 <body>
+    <nav>
+        <a href="table.html">View Alt School Africa Courses Table</a>
+        <a href="media.html">View My Media Page</a>
+    </nav>
+<h1>About Me</h1>    
+<div class="content">
+    <p>Hello! I am Providence Annor Asemah, a passionate learner and developer.
+        Here are some images that represent my journey:
+    </p>
+    <picture>
+        <source media="(max-width: 600px)" srcset="">
+        <source media="(max-width: 1200px)" srcset="">
+        <img src="media/img20.jpg" alt="A representation of my journey" clasresponsive-img>
+        <img src="media/img1.jpg" alt="A representation of my journey" clasresponsive-img>
+        <img src="media/img8.jpg" alt="A representation of my journey" clasresponsive-img>
 
-<main>
-    <h1>About Me</h1>
-    
-    <section>
-        <h2>A Visionary in Tech</h2>
-        <p>
-            My name is Providence Annor Asemah, and I am a DevOps Engineer currently enrolled at AltSchool Africa to expand my expertise in Cloud Engineering.
-            I am passionate about solving real-world problems with innovative technology and making an impact in the tech industry.
-        </p>
-        
-        <h3>Visual Representation</h3>
-        <picture>
-            <source media="(max-width: 600px)" srcset="images/profile-small.jpg">
-            <source media="(min-width: 601px) and (max-width: 1024px)" srcset="images/profile-medium.jpg">
-            <source media="(min-width: 1025px)" srcset="images/profile-large.jpg">
-            <img src="images/profile-large.jpg" alt="Profile Picture of Providence Annor Asemah">
-        </picture>
-    </section>
 
-    <section>
-        <h3>My Goals and Aspirations</h3>
-        <p>
-            I am committed to building a career where I can leverage my skills in DevOps and cloud engineering to drive innovation. My focus is to continuously grow, take on new challenges, and contribute meaningfully to tech-driven projects.
-        </p>
-    </section>
-</main>
+    </picture>
+
+    <p>
+        This image showcase my commtment to learning and growth.
+    </p>
+    <video controls autoplay muted class="responsive-img">
+        <source src="media/first-vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <audio control class="responsive-img">
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio tag
+
+    </audio>
+</div>
+
 
 <footer>
-    <p>Address: 123 Tech Lane, Innovation City, Country</p>
-    <p>&copy; 2024 Alt School Profile. All rights reserved.</p>
+    <p>Contact: baabaprovidence@gmail.com | LinkedIn: <a href="https://linkedin.com/in/providence-annor-asemah">linkedin.com/in/providence-annor-asemah</a>
+     | GitHub: <a href="https://github.com/Providence-Desiggn">github.com/Providence-Design</a>
+    </p>
+    <p>&copy; 2025 Alt School Africa Html Media Assignment. All rights reserved. &trade;</p>
 </footer>
-
 </body>
 </html>
