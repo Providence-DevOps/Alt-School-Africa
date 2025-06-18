@@ -1,0 +1,2 @@
+This is file 1.
+It is used to test count_files.sh.
